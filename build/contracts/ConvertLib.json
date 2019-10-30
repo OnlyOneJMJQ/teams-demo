@@ -25,15 +25,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"amount\",\"type\":\"uint256\"},{\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Sites/teams-example/contracts/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Sites/teams-example/contracts/ConvertLib.sol\":{\"keccak256\":\"0x64971bee9ef0af43109f80ffc9912eaea745c8d8ba775fe42d27e24ad307dab9\",\"urls\":[\"bzzr://0cf7c2951278cb5e786ca88a13e11558cd30b1f49f0662b55bc346f0c2ecd9ed\"]}},\"version\":1}",
-  "bytecode": "0x60ba610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a72305820593dc77e1352383579da7a60ccd9ca47c657797dff79502720774b6cf403e0650029",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a72305820593dc77e1352383579da7a60ccd9ca47c657797dff79502720774b6cf403e0650029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"amount\",\"type\":\"uint256\"},{\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Sites/teams-demo/contracts/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Sites/teams-demo/contracts/ConvertLib.sol\":{\"keccak256\":\"0x64971bee9ef0af43109f80ffc9912eaea745c8d8ba775fe42d27e24ad307dab9\",\"urls\":[\"bzzr://0cf7c2951278cb5e786ca88a13e11558cd30b1f49f0662b55bc346f0c2ecd9ed\"]}},\"version\":1}",
+  "bytecode": "0x60ba610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a723058206e426230aa01544ce9a3c022545163b7c4c035cae04383556082c4e70076d56f0029",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a723058206e426230aa01544ce9a3c022545163b7c4c035cae04383556082c4e70076d56f0029",
   "sourceMap": "34:155:0:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
   "deployedSourceMap": "34:155:0:-;;;;;;;;;;;;;;;;;;;;;;;;55:132;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;55:132:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;126:20;169:14;160:6;:23;153:30;;55:132;;;;:::o",
   "source": "pragma solidity >=0.4.25 <0.6.0;\n\nlibrary ConvertLib{\n\tfunction convert(uint amount,uint conversionRate) public pure returns (uint convertedAmount)\n\t{\n\t\treturn amount * conversionRate;\n\t}\n}\n",
-  "sourcePath": "/mnt/d/Sites/teams-example/contracts/ConvertLib.sol",
+  "sourcePath": "/mnt/d/Sites/teams-demo/contracts/ConvertLib.sol",
   "ast": {
-    "absolutePath": "/mnt/d/Sites/teams-example/contracts/ConvertLib.sol",
+    "absolutePath": "/mnt/d/Sites/teams-demo/contracts/ConvertLib.sol",
     "exportedSymbols": {
       "ConvertLib": [
         16
@@ -241,7 +241,7 @@
     "src": "0:190:0"
   },
   "legacyAST": {
-    "absolutePath": "/mnt/d/Sites/teams-example/contracts/ConvertLib.sol",
+    "absolutePath": "/mnt/d/Sites/teams-demo/contracts/ConvertLib.sol",
     "exportedSymbols": {
       "ConvertLib": [
         16
@@ -458,10 +458,16 @@
       "links": {},
       "address": "0x7A94A6fA516031D353b95748D7B82034310D4583",
       "transactionHash": "0xe84301bff7b8877b7378c18aed5700c3eabe00af83af94f4f65e01c8ef6ab9c4"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3487A3c08F3454F3f54bB3e27E0Ed9AF95DbDD57",
+      "transactionHash": "0x59634fc2de5bfba9c0beac5040afd729851d8852a13cacfdf744e3b34cf47488"
     }
   },
-  "schemaVersion": "3.0.11",
-  "updatedAt": "2019-07-09T22:08:59.697Z",
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-10-15T09:52:38.202Z",
   "devdoc": {
     "methods": {}
   },
